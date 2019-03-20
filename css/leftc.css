@@ -1,0 +1,131 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-size: 10px;
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	position:relative;
+	
+}
+.wrap{
+	width: 186%;
+	height: 100%;
+	position:absolute;
+	left: -84%;
+	top: 0;
+	transition:all 0.5s linear;
+}
+.btn{
+	position:absolute;
+	top: 5%;
+	left: 2%;
+	width: 9rem;
+	height: 9rem;
+	font-size: 2.5rem;
+	color:white;
+	border-radius: 50%;
+	border:0.2rem black solid;
+	border:0.2rem red solid;
+	background: blueviolet;
+	cursor: pointer;
+	transition:all 0.5s linear;
+}
+.hide{
+	width: 42%;
+	background: black;
+	height: 100%;
+	
+}
+.smallbox{
+	margin: 0 13% 0 11%;
+	width: 76%;
+	
+}
+.head{
+	width: 100%;
+	height: 12rem;
+	line-height: 12rem;
+	padding: 7rem 0 4rem;
+	border-bottom: 0.2rem rgb(57,57,57) solid;
+	margin-bottom: 10rem;
+}
+.coverImg{
+	width: 12rem;
+	border-radius:50% ;
+	height: 12rem;
+	background-size:cover ;
+	overflow: hidden;
+	border: 0.2rem white solid;
+	display: inline-block;
+	
+}
+.coverImg>img{
+	width: 100%;
+	height: 100%;
+	
+}
+.user{
+	color:white;
+	font-size: 3.5rem;
+	vertical-align: top;
+	margin-left: 5%;
+}
+
+
+/*中间*/
+.mybox{
+	margin: 5rem 0;
+	height: 6rem;
+	line-height: 6rem;
+	
+}
+.oneImg{
+	width: 10%;
+	float: left;
+	margin-right: 3%;
+}
+.twoImg{
+	width: 12%;
+	float: left;
+	margin-right: 1%;
+}
+.threeImg{
+	width: 13%;
+	float: left;
+}
+.ctext{
+	color:white;
+	font-size: 3rem;
+	margin-left: 8%;
+	margin-top: 0.75rem;
+	display: inline-block;
+}
+.footer{
+	margin-top: 38rem;
+	padding-top: 5rem;
+	border-top: 0.2rem rgb(57,57,57) solid;
+	height: px;
+}
+.ftext{
+	color:white;
+	font-size: 3rem;
+	margin-left: 3%;
+	margin-top: 0.75rem;
+	display: inline-block;
+	float: left;
+}
+.ml{
+	margin-left: 15%;
+}
+.left1{
+	left:0;
+}
+.left86{
+	left:86%;
+}

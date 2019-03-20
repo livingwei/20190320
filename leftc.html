@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/leftc.css" />
+	</head>
+
+	<body>
+		
+		<div class="wrap">
+			<div class="hide">
+				<div class="smallbox">
+					<div class="head">	
+						<div class="coverImg">
+							<img src="img/face.png" alt="" />
+						</div>
+						<span class="user">用户昵称</span>
+					</div>
+					<ul >
+						<li class='mybox'><img src="img/booking.png" alt="" class='oneImg'/>
+							<span class='ctext'>我的书签</span>
+						</li>
+						<li class='mybox'><img src="img/mu.png" alt="" class='twoImg'/>
+							<span class='ctext'>收听记录</span>
+						</li>
+						<li class='mybox'><img src="img/outline.png" alt="" class='threeImg'/>
+							<span class='ctext'>离线章节</span>
+						</li>
+					</ul>
+					<div class="footer">
+						<img src="img/turnr.png" alt="" class="threeImg"/>
+						<span class='ftext'>切换账号</span>
+						<img src="img/set.png" alt="" class="threeImg ml"/>
+						<span class='ftext'>设置</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn">点我啊</button>
+		
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/touch-0.2.14.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	     $('body')[0].addEventListener('touchmove',function(e){
+	     	var even = e || event;
+	     	even.preventDefault();
+	     })
+		$('.btn').click(
+			function(){
+				$('.wrap').toggleClass('left1');
+				$('.btn').toggleClass('left86');
+			}
+		);
+		//小手左移
+	    touch.on($('body'),'swipeleft',function(e){
+	    	    var even = e || event;
+	    	    $('.wrap').removeClass('left1');
+			$('.btn').removeClass('left86');
+	    })
+		//小手右移
+		touch.on($('body'),'swiperight',function(e){
+	    	    var even = e || event;
+	    	    $('.wrap').addClass('left1');
+			$('.btn').addClass('left86');
+	    })
+	</script>
+
+</html>
